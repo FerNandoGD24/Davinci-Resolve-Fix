@@ -1,5 +1,9 @@
 # DaVinci Resolve 20.2 — Fix en Arch Linux (RDNA2)
 
+## Problemas
+- unico lugar disponible para hacer tareas es el gestor de medios
+- todo lo demas provoca que se cierre
+
 ---
  
 ## Sistema donde se resolvió
