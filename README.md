@@ -88,5 +88,12 @@ Pinear para que no se actualicen solos. Editar `/etc/pacman.conf`:
 ```
 IgnorePkg = libc++ libc++abi
 ```
+
+## Fix 5 — Eliminar fuentes incompatibles
+```
+bash -c "sudo find /usr/share/fonts/noto/ -type f ! -name '*NotoSans-*' ! -name '*NotoSerif-*' -exec rm -f {} +"
+rm -rf ~/.cache/fontconfig
+sudo fc-cache -f -v
+```
  
 ---
