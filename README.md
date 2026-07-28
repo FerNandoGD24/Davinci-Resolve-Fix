@@ -95,5 +95,10 @@ bash -c "sudo find /usr/share/fonts/noto/ -type f ! -name '*NotoSans-*' ! -name 
 rm -rf ~/.cache/fontconfig
 sudo fc-cache -f -v
 ```
- 
+ ## Fix 6 - Arreglar audio
+ ```
+ sudo pacman -S pipewire wireplumber pavucontrol
+ systemctl --user restart pipewire
+ sudo pacman -S ffmpeg
+ ```
 ---
