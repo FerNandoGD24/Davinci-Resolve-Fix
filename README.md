@@ -88,17 +88,39 @@ Pinear para que no se actualicen solos. Editar `/etc/pacman.conf`:
 ```
 IgnorePkg = libc++ libc++abi
 ```
-
+ 
+---
+ 
 ## Fix 5 — Eliminar fuentes incompatibles
 ```
 bash -c "sudo find /usr/share/fonts/noto/ -type f ! -name '*NotoSans-*' ! -name '*NotoSerif-*' -exec rm -f {} +"
 rm -rf ~/.cache/fontconfig
 sudo fc-cache -f -v
 ```
- ## Fix 6 - Arreglar audio
+ 
+---
+ 
+## Fix 6 - Arreglar audio
  ```
- sudo pacman -S pipewire wireplumber pavucontrol
- systemctl --user restart pipewire
- sudo pacman -S ffmpeg
- ```
+ yay -S davinci-resolve-audio-fix
+```
+ 
+---
+ 
+## Fix 7 - Arreglar codificacion
+```
+yay -S davinci-ffmpeg-encoder-plugin
+```
+ 
+---
+
+## Fix8 - Arreglar medios
+```
+yay -S davinci-convert
+```
+```
+usar mi script de recodec:
+https://github.com/FerNandoGD24/recodec
+```
+
 ---
