@@ -1,4 +1,4 @@
-# DaVinci Resolve 20.2{21.3b} — Fix en Arch Linux (RDNA2)
+# DaVinci Resolve 21.0.3 — Fix en Arch Linux (RDNA2)
 
 ## Problemas
 - unico lugar disponible para hacer tareas es el gestor de medios
@@ -10,13 +10,13 @@
  
 | Componente | Versión |
 |---|---|
-| OS | Arch Linux x86_64 |
-| Kernel | 7.0.10-arch1-1 |
+| OS | Artix Linux x86_64 |
+| Kernel | Linux 7.1.5-artix1-2 |
 | GPU | AMD Radeon RX 6600M (RDNA2 / gfx1032) |
-| DE/WM | Hyprland 0.55.2 (Wayland) |
-| DaVinci Resolve | Studio 20.2.2.0010 {21.3b} |
-| OpenCL | opencl-amd 1:7.2.1-1 (AUR) |
-| libc++ | 20.1.6-2 (downgrade desde 22.x) |
+| DE/WM | KDE Plasma 6.7.3 |
+| DaVinci Resolve | Studio 21.0.3 |
+| OpenCL | opencl-amd (AUR) |
+| libc++ | 20.1.6-2 (downgrade) |
  
 ---
  
